@@ -1,0 +1,18 @@
+package NewJava;  // U.D package
+
+import java.util.*; //predefined package
+
+public class ClsObj {
+	
+	// fields
+	int tea=10; // main cls hotel
+
+	public static void main(String[] args) {
+		// servent 
+
+		ClsObj servent=new ClsObj();
+		
+		System.out.println(servent.tea);
+	}
+
+}

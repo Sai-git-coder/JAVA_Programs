@@ -1,0 +1,32 @@
+package NewClass;
+
+import java.lang.*;
+import java.util.Scanner;
+
+public class LearnString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		//concatenation
+		Scanner obj = new Scanner(System.in); // give Dynamic input by the user
+		
+		System.out.println("Enter the first name : ");
+		String firstName = obj.nextLine();
+		
+		System.out.println("Enter the second name : ");
+		String secondName = obj.nextLine();
+		
+		System.out.println("Enter the email : ");
+		String email = obj.nextLine();
+		
+		String Welcome = "Welcome, " +firstName +" "+ secondName +" "+"Your email is "+ email;
+		
+		String Welcome2 = "Welcome, ".concat(firstName).concat(" ").concat(secondName).concat(" ").concat("Your email is").concat(" ").concat(email);
+		
+		System.out.println(Welcome);
+		System.out.println(Welcome2);
+	}
+
+}

@@ -1,0 +1,23 @@
+package ClassObject;
+
+// Base class
+class Bank {
+    Bank(String bankName) {
+        System.out.println("Bank Name: " + bankName);
+    }
+}
+
+// Derived class
+class Branch extends Bank {
+    Branch(String bankName, String branchName) {
+        super(bankName);  // Call parent constructor
+        System.out.println("Branch Name: " + branchName);
+    }
+}
+
+// Main class
+public class BankSystem {
+    public static void main(String[] args) {
+        Branch branch = new Branch("ABC Bank", "Mumbai Branch");
+    }
+}

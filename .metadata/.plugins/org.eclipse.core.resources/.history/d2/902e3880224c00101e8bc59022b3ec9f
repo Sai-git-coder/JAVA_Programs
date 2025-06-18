@@ -1,0 +1,52 @@
+package NewJava;
+
+import java.util.Scanner;
+
+public class Car {
+	
+	// 1.fields of data
+	String brand;
+	int speed;
+	
+	// 2.Construct
+	Car(String b, int s){
+		
+		brand=b;
+		speed=s;
+	}
+
+	// 3.method
+	void showDetails(){
+		System.out.println("car speed: "+speed);
+		System.out.println("car brand: "+brand);
+	}
+	
+	
+	public static void main(String[] args) {
+	
+	/*	
+	 
+	// static input
+	
+    Car myCar = new Car("tata",120);
+    myCar.showDetails(); //obj
+    
+	*/			
+		
+		
+		Scanner sc = new Scanner(System.in);
+		
+		// 4.user input
+		
+		System.out.print(" enter brand: ");
+		String Brand=sc.nextLine();
+		
+		System.out.print(" enter speed: ");
+		int Speed=sc.nextInt();
+		
+		// 5.obj declaration
+		Car myCar = new Car(Brand,Speed);
+	    myCar.showDetails(); 
+	    
+	}
+}
